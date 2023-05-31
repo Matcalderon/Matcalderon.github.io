@@ -1,0 +1,590 @@
+@charset "UTF-8";
+/* Importar Estilo de Letras Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&display=swap');
+
+
+
+
+/* Primer parrafo */
+#parrafo1 {
+  padding-top: 50px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/* Color body Inicio */
+#bodyinicio {
+  background-color: #f4f4ff;
+}
+
+/* ----------------------Imagen Estatica--------------------------*/
+#matias {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 350px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Letra Estatica*/
+#letraestatica {
+  color: rgb(255, 255, 255);
+}
+
+/* Seccion imagenes con Hover (le da margen y se agrandan al pasar el mouse) */
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  border: 2px solid #007bff;
+}
+
+/* ----------------------------------------------*/
+
+/* Ajuste Titulo Galeria */
+#tituloGaleria {
+  padding-top: 10px;
+}
+
+#tituloGaleria2 {
+  padding-top: 10px;
+}
+
+#tituloGaleria3 {
+  padding-top: 10px;
+}
+
+/* -------------------------------------Animacion Botones ----------------------*/
+/* Boton con Delineado en movimiento con Hover*/
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: rgb(165, 190, 203);
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  --bs-btn-border-color: #2a3038;
+}
+
+.btn:after,
+.btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+
+.btn:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid rgb(20, 45, 83);
+  border-left: 5px solid rgb(20, 45, 83);
+}
+
+.btn:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid rgb(24, 56, 104);
+  border-right: 5px solid rgb(24, 56, 104);
+}
+
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  --bs-btn-hover-bg: #7a93ba;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.data-container {
+  background: #ffebee;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------Ajustes Parrafo 1------------------------*/
+
+/* Imagen Primer Parrafo con Hover*/
+
+
+#imagencarta1.card {
+  position: relative;
+  display: inline-block;
+}
+
+#imagencarta1.card:hover img {
+  transform: scale(1);
+}
+
+#imagencarta1.card:hover .card-info {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+#imagencarta1.card img {
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+/* Ajustes de carta con informacion sobrepuesta de imagen de 1 parrafo*/
+#imagencarta1.card .card-info {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 60px;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
+
+#imagencarta1.card .card-info h3 {
+  margin-top: 30%;
+
+
+}
+
+#imagencarta1.card .card-info p {
+  margin-bottom: 0;
+
+}
+
+#imagencartainfo {
+  color: white;
+}
+
+/* Drop-Down de navbar*/
+#dropdownmenu1 {
+  background-color: #e5e5f7;
+}
+
+/* -----------------Estilo de login--------------------*/
+#bodylogin {
+  font-family: 'Roboto', sans-serif;
+  background-color: #8a8ad0;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  display: flex;
+  min-height: 100vh;
+}
+
+#formlogin {
+  background-color: white;
+  margin: auto;
+  /* Responsividad with y max width*/
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+  text-align: center;
+
+}
+
+#formtitlelogin {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+#formparagraphlogin {
+  font-weight: 300;
+}
+
+#formlinklogin {
+  font-weight: 400;
+  color: black;
+}
+
+.form__container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+
+}
+
+.form__group {
+  position: relative;
+  --color: #5757577e;
+}
+
+.form__input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.form__input:not(:placeholder-shown) {
+  color: #4d4646;
+}
+
+/*Animacion letra suba al click*/
+.form__input:focus+.form__label,
+.form__input:not(:placeholder-shown)+.form__label {
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+  color: #05133e;
+}
+
+.form__label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  /*Transicion a Transform de 5 segundos*/
+  transition: transform .5s, color .3s;
+}
+
+.form__submit {
+  background-color: #3866f2;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: .8em 0;
+  border: none;
+  border-radius: .5em;
+}
+
+.form__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform .4s;
+}
+
+/*Escala letra login y movimiento linea*/
+.form__input:focus+.form__line,
+.form__input:not(:placeholder-shown)~.form__line {
+  transform: scale(1);
+}
+
+/*----------------- Contacto ---------------------------*/
+
+#bodycontacto {
+  background-color: #f4f4ff;
+  font-family: Georgia, Cambria, Times, "Times New Roman", serif;
+
+}
+
+/* Espacio en blanco de contacto (momentaneo para arreglar footer */
+.white-space {
+  height: 230px;
+  border: 1px solid transparent;
+}
+
+/*----------------- Registro ---------------------------*/
+
+#bodyregistro {
+  background-color: #f4f4ff;
+  font-family: Georgia, Cambria, Times, "Times New Roman", serif;
+}
+
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+/* Galeria */
+#bodygaleria2 {
+  background-color: rgb(16 16 16);
+
+}
+
+.gallery-item {
+  transition: all 1s ease;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+
+/*botones galeria*/
+#botonesgaleria {
+  padding: 2em 0 6em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#botonesgaleria button {
+  margin: 1em;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  border: none;
+  background: #545454;
+  color: #fff;
+  border: 2px solid #292929;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+#botonesgaleria button:hover,
+#botonesgaleria .btn-clicked {
+  background: #a3a3a3;
+  color: #302f2f;
+}
+
+/*------imagenes pagina galeria--------------*/
+
+#imagesgaleria {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+
+#imagesgaleria img {
+  width: 25em;
+  margin: 1em;
+  border-radius: 0.2em;
+  transition: 0.6s;
+  object-fit: cover;
+}
+
+#imagesgaleria .img-expand {
+  width: 25em;
+  margin: 1em;
+}
+
+#imagesgaleria .img-shrink {
+  width: 0em;
+  margin: -1em;
+}
+
+/* interaccion de imagen galeria hover*/
+.gallery-item:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.gallery-item {
+  transition: transform 0.3s ease;
+
+}
+
+/*Imagenes agrandadas de Galeria con el envio de mensajes o prompt */
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #3b3a3a;
+  max-width: 60%; /* Reducir el ancho máximo del cuadro */
+  display: flex;
+  flex-direction: column; /* Cambiar a dirección de columna para centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  background-color: hsla(231, 67%, 92%, 0.816);
+  border-image: initial;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 500px;
+  height: 842px;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#large-image {
+  max-width: 100%; /* Ajustar el ancho de la imagen */
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.message-box {
+	max-height: 70vh;
+  overflow-y: auto;
+  width: 100%; /* Ajustar el ancho del cuadro de mensajes */
+  border: 1px solid #8a8b8c;
+  padding: 1em;
+  margin-left: 1em; /* Agregar margen a la izquierda del cuadro de mensajes */
+}
+
+
+
+/* tamaño botones redes sociales*/
+ul.list-unstyled a.btn {
+  font-size: 14px;
+  padding: 4px 8px;
+  width: 32px;
+  height: 32px;
+}
+
+/*footer estilo letras*/
+#bodyfooter {
+  font-family: 'Lato', sans-serif;
+}
+/*boton Logout*/
+#btnlogout {
+  font-size: 10px;
+  padding: 10px 10px;
+  
+}
+/*Texto login (conectado)*/
+#texlogin  {
+  color: #f4f4ff;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+/*Responsividad imagenes galeria*/
+@media screen and (max-width: 1439) {
+  #imagesgaleria {
+    max-width: 896px;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  #imagesgaleria {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #imagesgaleria img {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #botonesgaleria button {
+    width: 100%;
+    display: block;
+  }
+
+  @media (max-width: 767px) { /* Imagenes Galeria Responsivas*/
+    /* Estilos específicos para dispositivos con ancho máximo de 767px (vista de celular) */
+    .modal-content {
+      max-width: 90%; /* Reducir el ancho máximo para adaptarse al tamaño de la pantalla del celular */
+      width: auto; /* Permitir que el ancho se ajuste automáticamente */
+      height: auto; /* Permitir que la altura se ajuste automáticamente */
+      margin: 2% auto; /* Reducir el margen verticalmente */
+      padding: 10px; /* Reducir el relleno */
+    }
+  }
+
+  
+
+/*imagenes de galeria*/
+  #imagesgaleria .img-expand,
+  #imagesgaleria img {
+    width: 100%;
+  }
+}
